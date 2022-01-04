@@ -13,31 +13,43 @@ body {
 
 main {
   background-color: aquamarine;
-  border-top: 4px solid red;
-  padding: 20px 0px;
+  border-top: 8px solid red;
+  padding: 32px 0px;
 }
 
 .max-width-wrapper {
-  width: 90%;
+  /* width: 90%; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
 }
 
-.card {
-  background-color: bisque;
-  border-bottom: 4px solid red;
-  border-top: 4px solid transparent;
-  width: 400px;
+.intro-chunk {
+  width: 240px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.colored {
+  color: hsl(160deg, 100%, 30%);
+}
+
+.card {
+  background-color: bisque;
+  border-bottom: 8px solid red;
+  border-top: 8px solid transparent;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  /* min-width: fit-content; */
+}
+
 .indented-heading {
   background-color: blueviolet;
-  border-bottom: 4px solid red;
-  margin-left: -15px;
+  border-bottom: 8px solid red;
+  margin-left: -8px;
+  margin-right: 16px;
   width: fit-content;
   padding: 10px;
 }
