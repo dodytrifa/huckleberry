@@ -11,24 +11,34 @@ body {
 
 /* Add styles here! */
 
-main {
+header {
   background-color: aquamarine;
-  border-top: 8px solid red;
+  border: 2px solid yellow;
+  padding: 3px 0px;
+}
+
+main {
+  background-color: beige;
+  border: 2px solid blue;
   padding: 32px 0px;
 }
 
-.max-width-wrapper {
+section {
   /* width: 90%; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
+  border: 1px solid black;
 }
 
 .intro-chunk {
-  width: 240px;
+  max-width: 700px;
+  width: 700px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid red;
 }
 
 .colored {
@@ -38,17 +48,19 @@ main {
 .card {
   background-color: bisque;
   border-bottom: 8px solid red;
-  border-top: 8px solid transparent;
+  border-top: 2px solid transparent;
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
   /* min-width: fit-content; */
 }
 
 .indented-heading {
   background-color: blueviolet;
   border-bottom: 8px solid red;
-  margin-left: -8px;
+  margin-left: -24px;
   margin-right: 16px;
   width: fit-content;
   padding: 10px;
