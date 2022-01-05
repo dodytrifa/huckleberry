@@ -1,44 +1,66 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+* {
   font-family: "Lato", sans-serif;
+  margin: 0;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
 }
 
 /* Add styles here! */
 
 header {
-  background-color: aquamarine;
-  border: 2px solid yellow;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
   padding: 3px 0px;
 }
 
+.max-width-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 640px;
+}
+
+h1 {
+  line-height: 2rem;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+p {
+  font-size: 1rem;
+}
+
 main {
-  background-color: beige;
-  border: 2px solid blue;
-  padding: 32px 0px;
+  background-color: hsl(0deg, 0%, 60%);
+  padding: 56px 0px;
 }
 
 section {
-  /* width: 90%; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-  border: 1px solid black;
 }
 
 .intro-chunk {
-  max-width: 700px;
-  width: 700px;
-  width: 360px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid red;
+  max-width: 360px;
+  min-width: 320px;
+  padding-left: 32px;
 }
 
 .colored {
@@ -46,22 +68,21 @@ section {
 }
 
 .card {
-  background-color: bisque;
-  border-bottom: 8px solid red;
-  border-top: 2px solid transparent;
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: white;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  border-top: 8px solid transparent;
+  max-width: 640px;
+  min-width: 240px;
   padding-left: 16px;
   padding-right: 16px;
-  /* min-width: fit-content; */
+  text-align: left;
 }
 
 .indented-heading {
-  background-color: blueviolet;
-  border-bottom: 8px solid red;
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
   margin-left: -24px;
   margin-right: 16px;
   width: fit-content;
-  padding: 10px;
+  padding: 8px 24px 8px 24px;
 }
